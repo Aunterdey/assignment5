@@ -74,6 +74,14 @@ window.location.href = "./question.html"
 
 //   });
 
+ let colors = ['lightblue', 'lightgreen',  'silver', 'lightyellow'];
+
+ let currentIndex = 0;
+ function changecolors(){
+    currentIndex = (currentIndex + 1) % colors.length;
+    document.getElementById('colorBox').style.backgroundColor = colors[currentIndex];
+ }
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
